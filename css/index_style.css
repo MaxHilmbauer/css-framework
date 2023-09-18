@@ -1,17 +1,79 @@
+.background-section img {
+     width: 100%;
+     max-width: 100%; 
+     height: 50vh;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 0;
+ }
+
 .navbar {
      background-color: #1D1D1D;
      text-align: center;
-     border-radius: 1rem; 
-     padding: 1rem; 
-     max-width: 30rem; 
-     margin:  auto; 
-     display: flex; 
+     border-radius: 15px;
+     padding: 1rem;
+     max-width: 35rem;
+     margin: 0 auto; 
+     display: flex;
      justify-content: space-between;
-     margin-top: 1rem;
-           
+     position: absolute;
+     top: 1rem; 
+     left: 0;
+     right: 0; 
+     z-index: 1;
  }
-        
-.navbar a {
-     color: #FF4C29;
-     text-decoration: none;
-}
+ 
+ .navbar a {
+      color: #FF4C29;
+      text-decoration: none;
+ }
+
+ .container {
+     width: 100%;
+     max-width: 100%;
+     height: 50vh; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 24px;
+     color: white;
+   }
+
+   .container:nth-child(odd) {
+     background-color: #FF4C29; 
+   }
+
+   .container:nth-child(even) {         /*Pseudoklasse definiert auf Position hier: gerade*/
+     background-color: #1D1D1D; 
+   }
+
+   .footer {
+     background-color: #DDDDDD;
+     color: white;
+     display: flex;
+     padding: 5rem;
+   }
+
+   .footer .column {
+     flex: 1;
+     text-align: center;
+     border-right: 1px solid white; 
+     height: 5rem;
+   }
+
+   .footer .column:last-child {   /*Pseudoklasse letztes Elelmt ansprechen, sonst alle Linien weg!*/
+     border-right: none; 
+   }
+
+   body {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh; 
+   }
+
+   .content {
+     flex-grow: 1; 
+   }
+ 
+ 
