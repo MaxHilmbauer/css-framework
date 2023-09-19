@@ -1,3 +1,4 @@
+
 .background-section img {
      width: 100%;
      max-width: 100%; 
@@ -9,7 +10,7 @@
  }
 
 .navbar {
-     background-color: #1D1D1D;
+     background-color: var(--background);
      text-align: center;
      border-radius: 15px;
      padding: 1rem;
@@ -25,13 +26,11 @@
  }
  
  .navbar a {
-      color: #FF4C29;
+      color: var(--primary);
       text-decoration: none;
  }
 
  .container {
-     width: 100%;
-     max-width: 100%;
      height: 50vh; 
      display: flex;
      justify-content: center;
@@ -41,15 +40,15 @@
    }
 
    .container:nth-child(odd) {
-     background-color: #FF4C29; 
+     background-color: var(--primary); 
    }
 
    .container:nth-child(even) {         /*Pseudoklasse definiert auf Position hier: gerade*/
-     background-color: #1D1D1D; 
+     background-color: var(--background); 
    }
 
    .footer {
-     background-color: #DDDDDD;
+     background-color: var(--primary);
      color: white;
      display: flex;
      padding: 5rem;
