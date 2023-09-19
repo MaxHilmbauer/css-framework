@@ -1,0 +1,78 @@
+
+.background-section img {
+     width: 100%;
+     max-width: 100%; 
+     height: 50vh;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 0;
+ }
+
+.navbar {
+     background-color: var(--background);
+     text-align: center;
+     border-radius: 15px;
+     padding: 1rem;
+     max-width: 35rem;
+     margin: 0 auto; 
+     display: flex;
+     justify-content: space-between;
+     position: absolute;
+     top: 1rem; 
+     left: 0;
+     right: 0; 
+     z-index: 1;
+ }
+ 
+ .navbar a {
+      color: var(--primary);
+      text-decoration: none;
+ }
+
+ .container {
+     height: 50vh; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 24px;
+     color: white;
+   }
+
+   .container:nth-child(odd) {
+     background-color: var(--primary); 
+   }
+
+   .container:nth-child(even) {         /*Pseudoklasse definiert auf Position hier: gerade*/
+     background-color: var(--background); 
+   }
+
+   .footer {
+     background-color: var(--primary);
+     color: white;
+     display: flex;
+     padding: 5rem;
+   }
+
+   .footer .column {
+     flex: 1;
+     text-align: center;
+     border-right: 1px solid white; 
+     height: 5rem;
+   }
+
+   .footer .column:last-child {   /*Pseudoklasse letztes Elelmt ansprechen, sonst alle Linien weg!*/
+     border-right: none; 
+   }
+
+   body {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh; 
+   }
+
+   .content {
+     flex-grow: 1; 
+   }
+ 
+ 
