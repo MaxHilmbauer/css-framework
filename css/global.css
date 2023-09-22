@@ -1,0 +1,39 @@
+@import url('./fonts/roboto/Roboto-Medium.ttf');
+
+body {
+    font-family: 'Roboto-Medium', sans-serif;
+    background-color: var(--background);
+}
+
+
+section {
+    padding: 2rem;
+}
+
+section:nth-child(even) {
+    background-color: var(--primary);
+}
+section:nth-child(odd) {
+    background-color: var(--background);
+}
+
+section>h2 {
+    font: 4rem sans-serif;
+    font-weight: 900;
+}
+
+section>p {
+    padding-left: 3rem;
+    font: 1.5rem sans-serif;
+    font-weight: 600;
+}
+
+section:nth-child(even) {
+    color: var(--white);
+}
+
+section:nth-child(odd) {
+    color: var(--primary);
+}
+
+

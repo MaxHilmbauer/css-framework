@@ -1,0 +1,28 @@
+@import url('./fonts/roboto/Roboto-Regular.ttf');
+
+footer {
+    background-color: var(--primary);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid white;
+    height: 5rem;
+}
+
+.footer-column:first-child {
+    border-left: 1px solid white;
+}
+
+
