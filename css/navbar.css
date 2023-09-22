@@ -6,6 +6,7 @@ nav {
 	box-shadow: 0 0 2rem var(--primary);
 	position: sticky;
 	z-index: 1;
+	top: 0;
 	font-size: 2rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
