@@ -1,0 +1,36 @@
+@import url('./fonts/roboto/Roboto-Regular.ttf');
+
+nav {
+  background-color: var(--background);
+	border-radius: 0 0 1rem 1rem;
+	box-shadow: 0 0 2rem var(--primary);
+	position: sticky;
+	z-index: 1;
+	top: 0;
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+nav>div {
+	display: flex;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+nav>div>div {
+	flex: 1;
+	text-align: center;
+}
+
+
+nav a {
+  color: var(--primary);
+  text-decoration: none;
+	transition: 0.3s ease-out;
+}
+
+nav a:hover {
+	color: var(--secondary);
+	transition: 0.3s ease-in;
+}
