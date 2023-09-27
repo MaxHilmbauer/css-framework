@@ -29,7 +29,8 @@ h1 {
 }
 
 p {
-    font: 1.75rem sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
 	font-weight: 600;
 }
 
@@ -38,7 +39,6 @@ p {
 
 section {
     margin-top: 2vh;
-    min-height: 15vh;
     color: white;
     background-color: var(--background);
 }
@@ -79,17 +79,9 @@ section>.actions {
 	background-color: var(--primary);
 	max-width: fit-content;
 	border-radius: 8px;
+    min-width: 10vw
 }
 
-.card>h2 {
-    text-align: center;
-}
-
-.card>p {
-    text-align: center;
-}
-
-.card {}
 
 .card.outlined {
 	border: 2px solid var(--primary);
@@ -134,6 +126,75 @@ button.outlined:hover {
     border: 2px solid var(--primary);
     transition: 0.3s all ease-in-out;
 }
+
+article {
+    background-color: #383737;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+blockquote {
+    padding: 15px;
+    background-color: #383737;
+    border-radius: 10px;
+}
+
+blockquote>p::before {
+    content: "\201C";
+    font-size: 4rem;
+    color: var(--primary);
+    float: left;
+    margin-left: -1rem;
+    margin-top: -0.5rem;
+    padding-right: 7px;
+}
+
+blockquote>p {
+    max-width: fit-content;
+}
+
+blockquote>p::after {
+    content: "\201D";
+    font-size: 4rem;
+    color: var(--primary);
+    float: right;
+    margin-right: -1rem;
+    margin-bottom: -0.5rem;
+    padding-left: 7px;
+
+}
+
+
+
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+  
+ul li::before {
+    content: "\2022"; 
+    color: var(--primary);
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+ul { padding-left: 50px; }
+li { 
+color: #4F4F4F; 
+padding-left: 16px;
+margin-top: 24px;
+position: relative;
+font-size: 16px;
+line-height: 20px;
+}
+
+strong { color: #292929; }
+
+ul.alternating-colors>li:nth-child(odd):before { border-color: #0BAD02; } 
+ul.alternating-colors>li:nth-child(odd):before { border-color: #2378D5; } 
 
 
 
