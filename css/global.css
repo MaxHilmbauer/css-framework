@@ -87,17 +87,16 @@ section>.actions {
 
 
 .card {
-padding: 2rem;
-background-color: var(--primary);
-max-width: fit-content;
-border-radius: 8px;
-	min-width: 10vw
+	padding: 2rem;
+	background-color: var(--primary);
+	border-radius: 8px;
+	width: 250px;
 }
 
 
 .card.outlined {
-border: 2px solid var(--primary);
-background-color: transparent;
+	border: 2px solid var(--primary);
+	background-color: transparent;
 }
 
 
