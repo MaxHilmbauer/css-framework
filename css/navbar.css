@@ -28,9 +28,14 @@ nav a {
   color: var(--primary);
   text-decoration: none;
 	transition: 0.3s ease-out;
+	font-style: normal;
 }
 
 nav a:hover {
 	color: var(--secondary);
 	transition: 0.3s ease-in;
 }
+
+
+
+
