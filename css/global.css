@@ -94,6 +94,8 @@ background-color: transparent;
 
 /* Button Styles */
 button {
+	display: inline-flex;
+  align-items: center;
 	color: var(--white);
 	background-color: var(--primary);
 	border: 0px;
@@ -116,6 +118,7 @@ button:hover {
 }
 
 button.outlined {
+	text-align: center;
 	color: var(--primary);
 	background-color: transparent;
 	border: 2px solid var(--primary);
