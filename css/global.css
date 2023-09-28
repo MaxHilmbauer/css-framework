@@ -15,10 +15,16 @@
 }
 
 body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: 'Roboto-Medium', sans-serif;
 	background-color: var(--background);
 	color: white;
 }
+
+
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto-Condensed-Bold', sans-serif
 }
@@ -31,8 +37,10 @@ h1 {
 p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.75rem;
-font-weight: 600;
+	font-weight: 600;
 }
+
+
 
 
 /* Section Styling */
@@ -58,6 +66,10 @@ section::after {
 	width: 98vw;
 	background: white;
 	top: calc(50% - 2px);
+}
+
+section:last-child::after {
+	display: none;
 }
 
 section>.content>p {
