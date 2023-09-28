@@ -3,9 +3,9 @@
 footer {
     background-color: var(--primary);
     color: white;
-    position: fixed;
-    width: 100vw;
-    bottom: 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
 }
 
 footer>div {
