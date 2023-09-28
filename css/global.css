@@ -15,10 +15,16 @@
 }
 
 body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: 'Roboto-Medium', sans-serif;
 	background-color: var(--background);
 	color: white;
 }
+
+
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto-Condensed-Bold', sans-serif
 }
@@ -31,8 +37,10 @@ h1 {
 p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.75rem;
-font-weight: 600;
+	font-weight: 600;
 }
+
+
 
 
 /* Section Styling */
@@ -60,6 +68,10 @@ section::after {
 	top: calc(50% - 2px);
 }
 
+section:last-child::after {
+	display: none;
+}
+
 section>.content>p {
 	padding-left: 7rem;
 }
@@ -75,17 +87,16 @@ section>.actions {
 
 
 .card {
-padding: 2rem;
-background-color: var(--primary);
-max-width: fit-content;
-border-radius: 8px;
-	min-width: 10vw
+	padding: 2rem;
+	background-color: var(--primary);
+	border-radius: 8px;
+	width: 250px;
 }
 
 
 .card.outlined {
-border: 2px solid var(--primary);
-background-color: transparent;
+	border: 2px solid var(--primary);
+	background-color: transparent;
 }
 
 
@@ -94,6 +105,8 @@ background-color: transparent;
 
 /* Button Styles */
 button {
+	display: inline-flex;
+  align-items: center;
 	color: var(--white);
 	background-color: var(--primary);
 	border: 0px;
@@ -116,6 +129,7 @@ button:hover {
 }
 
 button.outlined {
+	text-align: center;
 	color: var(--primary);
 	background-color: transparent;
 	border: 2px solid var(--primary);
