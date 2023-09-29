@@ -1,0 +1,12 @@
+.card {
+    background-color: var(--primary);
+    color: white;
+    padding: 4px;
+}
+
+.outlined {
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--primary);
+    border-radius: 2px;
+}

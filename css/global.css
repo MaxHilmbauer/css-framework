@@ -15,7 +15,10 @@
 }
 
 body {
-	font-family: 'Roboto-Medium', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
 	background-color: var(--background);
 	color: white;
 }
@@ -41,10 +44,8 @@ section {
 	margin-top: 2vh;
 	color: white;
 	background-color: var(--background);
-}
-
-section>* {
-	padding-left: 4rem;
+	padding: 3rem;
+	padding-top: 0px;
 }
 
 section::after {
@@ -55,37 +56,40 @@ section::after {
 	margin-right: auto;
 	margin-top: 2vh;
 	height: 2px;
-	width: 98vw;
+	padding: 0px;
+	width: 100%;
 	background: white;
 	top: calc(50% - 2px);
 }
 
-section>.content>p {
-	padding-left: 7rem;
+section:last-child::after {
+	display: none;
+}
+
+section>.content {
+	margin-top: 0px;
 }
 
 
 section>.actions {
 	margin-top: 2vh;
-	padding-left: 6rem;
 }
 
 
 /* Card Styles */
 
 
+
 .card {
-padding: 2rem;
-background-color: var(--primary);
-max-width: fit-content;
-border-radius: 8px;
-	min-width: 10vw
+	padding: 2rem;
+	background-color: var(--primary);
+	border-radius: 8px;
 }
 
 
 .card.outlined {
-border: 2px solid var(--primary);
-background-color: transparent;
+	border: 3px solid var(--primary);
+	background-color: transparent;
 }
 
 
@@ -94,10 +98,13 @@ background-color: transparent;
 
 /* Button Styles */
 button {
+	display: inline-flex;
+	align-items: center;
 	color: var(--white);
 	background-color: var(--primary);
 	border: 0px;
 	text-align: center;
+	font-family: 'Roboto-Medium', sans-serif;
 }
 
 button.lg {
@@ -155,6 +162,7 @@ blockquote>p::before {
 
 blockquote>p {
     max-width: fit-content;
+	font-family: 'Montserrat', sans-serif;
 }
 
 blockquote>p::after {
@@ -258,7 +266,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 	background-color: var(--background);
 	color: var(--primary);
 	padding: 15px;
-	border: 2px solid var(--primary);
+	border: 3px solid var(--primary);
 	border-radius: 5px;
 	transition: 0.3s ease-out;
 }
@@ -274,7 +282,7 @@ input[type="text"]:focus::placeholder, input[type="email"]:focus::placeholder, i
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
 	background-color: var(--primary);
 	color: var(--white);
-	border: 2px solid var(--primary);
+	border: 3px solid var(--primary);
 	transition: 0.3s ease-out;
 }
 
@@ -284,7 +292,7 @@ textarea {
 	background-color: var(--background);
 	color: var(--primary);
 	padding: 15px;
-	border: 2px solid var(--primary);
+	border: 3px solid var(--primary);
 	border-radius: 5px;
 	transition: 0.3s ease-out;
 
@@ -301,7 +309,7 @@ textarea:focus::placeholder {
 textarea:focus {
 	background-color: var(--primary);
 	color: var(--white);
-	border: 2px solid var(--primary);
+	border: 3px solid var(--primary);
 	transition: 0.3s ease-out;
 }
 

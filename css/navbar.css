@@ -1,7 +1,7 @@
 @import url('./fonts/roboto/Roboto-Regular.ttf');
 
 nav {
-  background-color: var(--background);
+	background-color: var(--background);
 	border-radius: 0 0 1rem 1rem;
 	box-shadow: 0 0 2rem var(--primary);
 	position: sticky;
@@ -10,6 +10,11 @@ nav {
 	font-size: 2rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 50%; /* Full width */
+	margin-left: 25%;
+	z-index: 1;
 }
 
 nav>div {
@@ -38,4 +43,23 @@ nav a:hover {
 
 
 
+@media only screen and (min-width: 100px) {
+	nav {
+		width: 100%;
+		margin-left: 0;
+	}
+}
 
+@media only screen and (min-width: 1000px) {
+	nav {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	nav {
+		width: 50%;
+		margin-left: 25%;
+	}
+}
