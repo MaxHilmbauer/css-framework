@@ -4,6 +4,9 @@ nav {
 	background-color: var(--background);
 	border-radius: 0 0 1rem 1rem;
 	box-shadow: 0 0 2rem var(--primary);
+	position: sticky;
+	z-index: 1;
+	top: 0;
 	font-size: 2rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -60,8 +63,3 @@ nav a:hover {
 		margin-left: 25%;
 	}
 }
-
-
-
-
-

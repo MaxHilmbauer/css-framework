@@ -22,9 +22,6 @@ body {
 	background-color: var(--background);
 	color: white;
 }
-
-
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto-Condensed-Bold', sans-serif
 }
@@ -37,10 +34,8 @@ h1 {
 p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.75rem;
-	font-weight: 600;
+font-weight: 600;
 }
-
-
 
 
 /* Section Styling */
@@ -104,7 +99,7 @@ section>.actions {
 /* Button Styles */
 button {
 	display: inline-flex;
-  	align-items: center;
+	align-items: center;
 	color: var(--white);
 	background-color: var(--primary);
 	border: 0px;
@@ -128,7 +123,6 @@ button:hover {
 }
 
 button.outlined {
-	text-align: center;
 	color: var(--primary);
 	background-color: transparent;
 	border: 2px solid var(--primary);
