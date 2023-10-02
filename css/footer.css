@@ -10,19 +10,30 @@ footer {
 
 footer>div {
     display: flex;
-    justify-content: space-around;
-    padding: 5rem;
+    justify-content: space-evenly;
+    padding: 1rem;
 }
 
-.footer-column {
-    flex: 1;
+footer>div>div {
     text-align: center;
-    border-right: 1px solid white;
-    height: 5rem;
 }
 
-.footer-column:first-child {
-    border-left: 1px solid white;
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+    font-style: normal;
+    font-weight: bold;
 }
 
+a:hover {
+    color: var(--white);
+    text-decoration: underline;
+    transition: 0.3s ease-in;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
 
