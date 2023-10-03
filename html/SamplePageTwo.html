@@ -1,4 +1,4 @@
-<!--<!doctype html>
+<!doctype html>
 <html class="no-js" lang="en">
 
 <head>
@@ -7,19 +7,21 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+ <link rel="shortcut icon" type="image/x-icon" href="./../favicon.ico">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="./../site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="stylesheet" href="./../css/variables.css">
   <link rel="stylesheet" href="./../css/normalize.css">
   <link rel="stylesheet" href="./../css/main.css">
+  <link rel="stylesheet" href="./../css/skeleton.css">
+
+  <link rel="stylesheet" href="./../css/variables.css">
+  <link rel="stylesheet" href="./../css/global.css">
+  <link rel="stylesheet" href="./../css/navbar.css">
+  <link rel="stylesheet" href="./../css/footer.css">
 
 
   <meta name="theme-color" content="#fafafa">
@@ -27,28 +29,127 @@
 </head>
 
 <body>
-   <div class="background-section">
-    <img src="img/starsky.jpg" alt="Hintergrundbild">
-    <div class="navbar">
-      <a href="./../index.html">Home</a>
-      <div>
-        <a href="./samplepage1.html">Test1</a>
+   <nav>
+    <div class="row">
+      <div class="four columns">
+        <a href="./../index.html">Home</a>          
       </div>
-      <a href="#">Test2</a>
+      <div class="four columns">
+        <a href="./SamplePageOne.html">Sample Page 1</a>          
+      </div>
+      <div class="four columns">
+        <a class="active" href="#">Sample Page 2</a>          
+      </div>
     </div>
-  </div>
+  </nav>
 
-  <div class="container">Container 1</div>
-  <div class="container">Container 2</div>
-  <div class="container">Container 3</div>
-  <div class="container">Container 4</div>
-  <div class="container">Container 5</div>
+  <main>
 
-  <div class="footer">
-    <div class="column">Spalte 1</div>
-    <div class="column">Spalte 2</div>
-    <div class="column">Spalte 3</div>
-  </div>
+    <section>
+      <h1>
+        Sample Page 2
+      </h1>
+      <div class="content">
+        <p>
+          Additional styles for the css-framework
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>
+        Table Styling: &lt;table&gt;
+     </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Plans</th>
+              <th>Personal</th>
+              <th>Team</th>
+              <th>Organization</th>
+              <th>Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="category">Registered Voters</td>
+              <td label="Personal">Up to 100</td>
+              <td label="Team">Up to 500</td>
+              <td label="Organization">Up to 2,000</td>
+              <td label="Enterprise">Unlimited</td>
+            </tr>
+            <tr>
+              <td class="category">Simultaneous Elections</td>
+              <td label="Personal">1</td>
+              <td label="Team">3</td>
+              <td label="Organization">10</td>
+              <td label="Enterprise">Unlimited</td>
+            </tr>
+            <tr>
+              <td class="category">Support</td>
+              <td label="Personal">Basic email support</td>
+              <td label="Team">Priority email support</td>
+              <td label="Organization">Priority email and phone support</td>
+              <td label="Enterprise">24/7 premium support with dedicated account manager</td>
+            </tr>
+            <tr>
+              <td class="category">Security Features</td>
+              <td label="Personal">Standard security features</td>
+              <td label="Team">Advances security features</td>
+              <td label="Organization">Enhanced security and fraud detection</td>
+              <td label="Enterprise">Advances security, encryption and compliance options</td>
+            </tr>
+            <tr>
+              <td class="category">Voting Tools and Customization</td>
+              <td label="Personal">Basic voting tools</td>
+              <td label="Team">Additional voting tools</td>
+              <td label="Organization">Full suite of voting tools</td>
+              <td label="Enterprise">Custom development and integration</td>
+            </tr>
+            <tr>
+              <td class="category">Analytics and Reporting</td>
+              <td label="Personal">Limited</td>
+              <td label="Team">Voter engagement analytics</td>
+              <td label="Organization">Analytics and Reporting</td>
+              <td label="Enterprise">Enterprise grade analytics</td>
+            </tr>
+          </tbody>  
+        </table>
+        </div> 
+      </div>
+    </section>
+  </main>
+
+  
+
+  <footer>
+    <div class="row">                                                                                                                                                                                                                                                                       
+      <div class="four columns">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="#">eVoting Ultimate</a></li>
+          <li><a href="#">eVoting Plus</a></li>
+          <li><a href="#">eVoting Basic</a></li>
+        </ul>
+      </div>
+      <div class="four columns" >
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="four columns">
+        <ul>
+          <li><h5>Company</h5></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#contactForm">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="./../js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="./../js/plugins.js"></script>

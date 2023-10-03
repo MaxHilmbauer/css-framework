@@ -36,8 +36,8 @@
 
   <nav>
     <div class="row">
-      <div class="four columns">
-        <a href="#">Home</a>          
+      <div class="four columns" >
+        <a class="active" href="#">Home</a>          
       </div>
       <div class="four columns">
         <a href="./html/SamplePageOne.html">Sample Page 1</a>          
@@ -92,6 +92,72 @@
             <p>Host your own eVoting platform, to have full control over the voting data. Full documentation and easy setup on creating your on-premise solution.</p>
           </div>
         </div>
+      </div>
+    </section>
+    <section>
+      <h2>
+        Our plans
+     </h2>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Plans</th>
+              <th>Personal</th>
+              <th>Team</th>
+              <th>Organization</th>
+              <th>Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="category">Registered Voters</td>
+              <td label="Personal">Up to 100</td>
+              <td label="Team">Up to 500</td>
+              <td label="Organization">Up to 2,000</td>
+              <td label="Enterprise">Unlimited</td>
+            </tr>
+            <tr>
+              <td class="category">Simultaneous Elections</td>
+              <td label="Personal">1</td>
+              <td label="Team">3</td>
+              <td label="Organization">10</td>
+              <td label="Enterprise">Unlimited</td>
+            </tr>
+            <tr>
+              <td class="category">Support</td>
+              <td label="Personal">Basic email support</td>
+              <td label="Team">Priority email support</td>
+              <td label="Organization">Priority email and phone support</td>
+              <td label="Enterprise">24/7 premium support with dedicated account manager</td>
+            </tr>
+            <tr>
+              <td class="category">Security Features</td>
+              <td label="Personal">Standard security features</td>
+              <td label="Team">Advances security features</td>
+              <td label="Organization">Enhanced security and fraud detection</td>
+              <td label="Enterprise">Advances security, encryption and compliance options</td>
+            </tr>
+            <tr>
+              <td class="category">Voting Tools and Customization</td>
+              <td label="Personal">Basic voting tools</td>
+              <td label="Team">Additional voting tools</td>
+              <td label="Organization">Full suite of voting tools</td>
+              <td label="Enterprise">Custom development and integration</td>
+            </tr>
+            <tr>
+              <td class="category">Analytics and Reporting</td>
+              <td label="Personal">Limited</td>
+              <td label="Team">Voter engagement analytics</td>
+              <td label="Organization">Analytics and Reporting</td>
+              <td label="Enterprise">Enterprise grade analytics</td>
+            </tr>
+          </tbody>  
+        </table>
+          
+        </div> 
+        
+        
       </div>
     </section>
   
@@ -165,6 +231,18 @@
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+
+    window.setMobileTable = function(selector) {
+      // if (window.innerWidth > 600) return false;
+      const tableEl = document.querySelector(selector);
+      const thEls = tableEl.querySelectorAll('thead th');
+      const tdLabels = Array.from(thEls).map(el => el.innerText);
+      tableEl.querySelectorAll('tbody tr').forEach( tr => {
+        Array.from(tr.children).forEach( 
+          (td, ndx) =>  td.setAttribute('label', tdLabels[ndx])
+        );
+      });
+    }
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>

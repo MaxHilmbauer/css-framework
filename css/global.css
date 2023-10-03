@@ -25,6 +25,8 @@ body {
 
 main {
 	margin-top: 10rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 
 
@@ -49,10 +51,10 @@ p {
 /* Section Styling */
 
 section {
+	padding-bottom: 3rem;
 	margin-top: 2vh;
 	color: white;
 	background-color: var(--background);
-	padding: 3rem;
 	padding-top: 0px;
 }
 
@@ -97,7 +99,7 @@ section>.actions {
 
 
 .card.outlined {
-	border: 3px solid var(--primary);
+	border: 2px solid var(--primary);
 	background-color: transparent;
 }
 
@@ -256,6 +258,7 @@ code, kbd, samp {
 
 code {
 	color: var(--primary);
+	width: fit-content;
 }
 
 s {
@@ -383,6 +386,75 @@ progress::-moz-progress-bar {
 ::-webkit-scrollbar-track {
 	background-color: transparent;
 }
+
+table {
+	border: 2px solid var(--primary);
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+	border-radius: 8px;
+}
+
+td.category {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+th {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+td, th {
+	padding: 15px;
+	border: 0.5px solid var(--primary);
+	border-spacing: 0;
+}
+
+th:not(:first-child) {
+	text-align: center;
+}
+
+tr td:first-child, thead th:first-child {
+	padding-left: 1rem;
+}
+
+td {
+	padding: 1rem;
+}
+
+@media screen and (max-width: 659px) {
+	table {
+		width: 100%;
+	}
+	table thead {
+		display: none;
+	}
+	table td {
+		display: flex;
+		justify-content: first baseline;
+	}
+
+	table td:not(.category)::before {
+		content: attr(label);
+		font-weight: bold;
+		width: 120px;
+		min-width: 120px;
+		z-index: 100;
+	}
+
+	table td.category {
+		justify-content: center;
+		font-size: 2.5rem;
+		font-weight: bold;
+		font-family: 'Roboto-Condensed-Bold', sans-serif
+	}
+}
+
+
+
+
+
 
 
 
