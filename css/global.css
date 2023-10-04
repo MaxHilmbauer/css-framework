@@ -97,10 +97,26 @@ section>.actions {
 	margin-top: 1rem;
 }
 
+.card::before {
+}
 
 .card.outlined {
 	border: 2px solid var(--primary);
 	background-color: transparent;
+}
+
+
+.card-text-icon {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	vertical-align: auto;
+	height: 50%;
+	justify-content: space-between;
+}
+
+.card-icon {
+	width: 4rem;
 }
 
 
@@ -199,6 +215,10 @@ ul li::marker {
 	color: var(--primary);
 }
 
+ul.bullet-color li::marker {
+	color: var(--white);
+}
+
 ol li::marker {
 	color: var(--primary);
 }
@@ -268,7 +288,7 @@ s {
 }
 
 strong {
-	font-weight: bold;
+	font-weight: bolder;
 	color: var(--secondary);
 }
 
@@ -440,7 +460,6 @@ td {
 		font-weight: bold;
 		width: 120px;
 		min-width: 120px;
-		z-index: 100;
 	}
 
 	table td.category {
