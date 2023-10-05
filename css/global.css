@@ -97,7 +97,14 @@ section>.actions {
 	margin-top: 1rem;
 }
 
-.card::before {
+.card-label {
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	margin-top: -4.5rem;
+	background-color: var(--background);
+	padding: 10px;
+	border-radius: 25px;
+	border: 3px solid var(--primary);
 }
 
 .card.outlined {
