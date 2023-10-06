@@ -54,7 +54,6 @@ section {
 	padding-bottom: 3rem;
 	margin-top: 2vh;
 	color: white;
-	background-color: var(--background);
 	padding-top: 0px;
 }
 
@@ -85,11 +84,19 @@ section>.actions {
 	margin-top: 2vh;
 }
 
+section>.background-video {
+	position: relative;
+    left: 0;
+    width: 100%;
+	filter: blur(10px);
+    height: 0rem;
+    z-index: 0;
+    text-align: center;
+	z-index: -1;
+}
+
 
 /* Card Styles */
-
-
-
 .card {
 	padding: 2rem;
 	background-color: var(--primary);
