@@ -65,7 +65,6 @@ section::after {
 	margin-right: auto;
 	margin-top: 2vh;
 	height: 2px;
-	padding: 0px;
 	width: 100%;
 	background: white;
 	top: calc(50% - 2px);
@@ -84,15 +83,15 @@ section>.actions {
 	margin-top: 2vh;
 }
 
-section>.background-video {
-	position: relative;
-    left: 0;
-    width: 100%;
-	filter: blur(100px);
-    height: 0rem;
-    z-index: 0;
-    text-align: center;
-	z-index: -1;
+section video {
+	border-radius: 25px;
+    width: 60%;
+    object-fit: cover;
+    z-index: -100;
+}
+
+section>div>video:hover {
+	filter: blur(25px);
 }
 
 
@@ -225,15 +224,11 @@ ul {
 	list-style-type: disc;
 }
 
-ul li::marker {
-	color: var(--primary);
-}
-
 ul.bullet-color li::marker {
 	color: var(--white);
 }
 
-ol li::marker {
+li::marker {
 	color: var(--primary);
 }
 
@@ -482,8 +477,23 @@ td {
 		font-weight: bold;
 		font-family: 'Roboto-Condensed-Bold', sans-serif
 	}
+	section video {
+		width: 100%;
+	}
 }
 
+@media screen and (max-width: 1550px) {
+	section video {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1920px) {
+	section video {
+		width: 80%;
+	}
+}
+	
 
 
 
