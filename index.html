@@ -67,7 +67,7 @@
         
       </div>
       <div class="actions">
-        <button class="outlined lg" >Get started</button>
+        <button onclick="getStarted()" class="outlined lg" >Get started</button>
       </div>
     </section>
   
@@ -282,17 +282,12 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
 
-    window.setMobileTable = function(selector) {
-      // if (window.innerWidth > 600) return false;
-      const tableEl = document.querySelector(selector);
-      const thEls = tableEl.querySelectorAll('thead th');
-      const tdLabels = Array.from(thEls).map(el => el.innerText);
-      tableEl.querySelectorAll('tbody tr').forEach( tr => {
-        Array.from(tr.children).forEach( 
-          (td, ndx) =>  td.setAttribute('label', tdLabels[ndx])
-        );
-      });
+    function getStarted() {
+      window.location.href = "404.html";
     }
+
+
+
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
