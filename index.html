@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>eVoting System</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,9 +25,11 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
   <meta name="theme-color" content="#fafafa">
-  
+
 </head>
 
 <body>
@@ -50,38 +52,32 @@
 
   <main>
     <section>
-      <div>
-        
-        <div class="content">
-          <div class="row">
-            <div class="six columns">
-              <h1>
-                eVoting System
-              </h1>
-              <p>
-                Step into the future of voting with our state-of-the-art eVoting platform. 
-                It combines security, user-friendliness, and real-time results, enhancing transparency and trust. 
-                Plus, it's eco-friendly, making it the ideal choice for modernizing your voting processes. <br>
-                Embrace the future today!
-              </p>
-              <div class="actions">
-                <button onclick="getStarted()" class="outlined lg" >Get started</button>
-              </div>
-            </div>
-            <div class="six columns">
-              <div>
-                <video loop muted autoplay>
-                  <source src="./videos/heroVideo/HeroVideo2.mp4" type="video/mp4">
-                </video>
-              </div>
-              
+      <div class="content">
+        <div class="row">
+          <div class="six columns" data-aos="zoom-in">
+            <h1>
+              eVoting System
+            </h1>
+            <p>
+              Step into the future of voting with our state-of-the-art eVoting platform. 
+              It combines security, user-friendliness, and real-time results, enhancing transparency and trust. 
+              Plus, it's eco-friendly, making it the ideal choice for modernizing your voting processes. <br>
+              Embrace the future today!
+            </p>
+            <div class="actions">
+              <button onclick="getStarted()" class="outlined lg" >Get started</button>
             </div>
           </div>
-          
+          <div class="six columns">
+            <div data-aos="zoom-in">
+              <video loop muted autoplay>
+                <source src="./videos/heroVideo/HeroVideo2.mp4" type="video/mp4">
+              </video>
+            </div>
+            
+          </div>
         </div>
-        
       </div>
-      
     </section>
   
     <section>
@@ -90,7 +86,7 @@
      </h2>
       <div>
         <div class="row">
-          <div class="four columns card outlined">
+          <div  class="four columns card outlined">
             <h3 class="card-text-icon">Confidentiality <img src="./img/icons/security.svg" class="card-icon"> </h3>
             <p>We offer 100% Confidentiality for your vote. The vote will not be associated with the voter at any time. </p>
           </div>
@@ -121,7 +117,7 @@
       </h2>
       <div>
         <div class="row">
-          <div class="three columns card outlined">
+          <div class="three columns card outlined" data-aos="flip-left">
             <h3 class="card-text-icon"> Personal <img src="./img/icons/personal.svg" class="card-icon"></h3>
               <ul>
                 <li>
@@ -144,7 +140,7 @@
                 </li>
               </ul>
           </div>
-          <div class="three columns card outlined">
+          <div class="three columns card outlined" data-aos="flip-left">
             <h3 class="card-text-icon"> Team <img src="./img/icons/team2.svg" class="card-icon"></h3>
             <ul>
               <li>
@@ -168,7 +164,7 @@
             </ul>
             
           </div>
-          <div class="three columns card">
+          <div class="three columns card" data-aos="flip-left">
             <div class="card-label">
               MOST POPULAR
             </div>
@@ -194,7 +190,7 @@
               </li>
             </ul>
           </div>
-          <div class="three columns card outlined">
+          <div class="three columns card outlined" data-aos="flip-left">
             <h3 class="card-text-icon"> Enterprise <img src="./img/icons/enterprise.svg" class="card-icon"></h3>
             <ul>
               <li>
@@ -223,34 +219,38 @@
         
       </div>
     </section>
-  
-    <section>
-      <h2>
-        Contact us now
-     </h2>
-      <div class="content"> 
-        <form action="" id="contactForm">
-          <div class="row">
-            <div class="three columns">
-              <input type="text" name="name" id="name" placeholder="Name">
-            </div>
-            <div class="three columns">
-              <input type="email" name="email" id="email" placeholder="Email">
-            </div>
+    
+    
+      <section>
+        <div data-aos="fade-right">
+          <h2>
+            Contact us now
+          </h2>
+          <div class="content"> 
+            <form action="" id="contactForm">
+              <div class="row">
+                <div class="three columns">
+                  <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="three columns">
+                  <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <textarea name="message" id="message" rows="12" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="twelve columns">
+                  <button class="lg">SEND</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="row">
-            <div class="six columns">
-              <textarea name="message" id="message" rows="12" placeholder="Message"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns">
-              <button class="lg">SEND</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
+        </div>
+      </section>
+
   </main>
 
   
@@ -286,18 +286,23 @@
 
 
 
+  <script src="js/aos.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/reveal.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
+
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
 
     function getStarted() {
-      window.location.href = "404.html";
+      window.location.href = "GetStarted.html";
     }
+
+
 
 
 
