@@ -87,14 +87,14 @@ section>.actions {
 	margin-top: 2vh;
 }
 
-section video {
+section .hero-video {
 	border-radius: 25px;
     width: 60%;
     object-fit: cover;
     z-index: -100;
 }
 
-section>div>video:hover {
+section>div>.hero-video:hover {
 	filter: blur(25px);
 }
 
@@ -456,7 +456,7 @@ td {
 	padding: 1rem;
 }
 
-@media screen and (max-width: 659px) {
+@media screen and (max-width: 660px) {
 	table {
 		width: 100%;
 	}
@@ -481,19 +481,26 @@ td {
 		font-weight: bold;
 		font-family: 'Roboto-Condensed-Bold', sans-serif
 	}
-	section video {
+	section .hero-video {
 		width: 100%;
 	}
 }
 
+@media screen and (max-width: 850px) {
+	section .hero-video {
+		width: 100%;
+	}
+}
+
+
 @media screen and (max-width: 1550px) {
-	section video {
+	section .hero-video {
 		width: 100%;
 	}
 }
 
 @media screen and (max-width: 1920px) {
-	section video {
+	section .hero-video {
 		width: 80%;
 	}
 }
