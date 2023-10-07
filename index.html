@@ -291,9 +291,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="js/reveal.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/aos.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -305,6 +303,13 @@
       window.location.href = "GetStarted.html";
     }
 
+
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+    ScrollReveal().reveal("main", { delay: 100 });
+s
 
 
 
